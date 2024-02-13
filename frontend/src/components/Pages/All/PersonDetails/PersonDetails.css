@@ -1,0 +1,49 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.whitebox {
+  background-color: white;
+  width: 90%;
+  max-width: 70rem;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.details {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.profilepicture {
+  font-size: 15rem;
+  color: white;
+}
+
+.bookings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .whitebox {
+    width: 90%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .details {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

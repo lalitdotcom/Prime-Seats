@@ -1,0 +1,53 @@
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 6rem;
+}
+
+.card {
+  width: calc(33.33% - 20px);
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.posterImg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.movieInfo {
+  padding: 10px;
+}
+
+.movieName {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.genre {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #777;
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: calc(100% - 20px);
+  }
+}
